@@ -27,3 +27,48 @@ let newNames = nombres.map((item) => {
 });
 console.log(newNames);
 console.log(nombres);
+
+const universidad = [
+  {
+    nombre: "Tecnica Sistemas",
+    ciudad: "Medellin",
+    graduados: 100,
+    desertaron: 20,
+    year: 2021,
+  },
+  {
+    nombre: "Tecnica Sistemas",
+    ciudad: "Rionegro",
+    graduados: 50,
+    desertaron: 10,
+    year: 2021,
+  },
+  {
+    nombre: "Tecnica Sistemas",
+    ciudad: "Uraba",
+    graduados: 30,
+    desertaron: 0,
+    year: 2021,
+  },
+  {
+    nombre: "Tecnologia Sistemas",
+    ciudad: "Medellin",
+    graduados: 100,
+    desertaron: 20,
+    year: 2021,
+  },
+  {
+    nombre: "Tecnologia Sistemas",
+    ciudad: "Rionegro",
+    graduados: 50,
+    desertaron: 10,
+    year: 2021,
+  },
+  {
+    nombre: "Tecnologia Sistemas",
+    ciudad: "Uraba",
+    graduados: 30,
+    desertaron: 0,
+    year: 2021,
+  },
+];
