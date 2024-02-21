@@ -53,7 +53,7 @@ const universidad = [
   {
     nombre: "Tecnologia Sistemas",
     ciudad: "Medellin",
-    graduados: 100,
+    graduados: 180,
     desertaron: 20,
     year: 2021,
   },
@@ -72,3 +72,28 @@ const universidad = [
     year: 2021,
   },
 ];
+
+//Every
+const sinDesercion = universidad.every((item) => item.desertaron === 0);
+console.log(sinDesercion);
+//Some
+const algunoDesercion = universidad.some((item) => item.desertaron > 0);
+console.log(algunoDesercion);
+
+//Filter
+const programaSinDesercion = universidad
+  .filter((item) => item.desertaron === 0)
+  .map((item) => item.nombre);
+
+console.log(programaSinDesercion);
+//Reduce
+
+const graduadosUraba = universidad
+  .filter((item) => item.ciudad === "Uraba")
+  .reduce((contador, item) => (contador += item.graduados), 0);
+console.log(graduadosUraba);
+
+const masGraduados = universidad.reduce((prev, act) => {
+  return prev.graduados > act.graduados ? prev : act;
+});
+console.log(masGraduados);
