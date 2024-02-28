@@ -97,3 +97,22 @@ const masGraduados = universidad.reduce((prev, act) => {
   return prev.graduados > act.graduados ? prev : act;
 });
 console.log(masGraduados);
+
+const palabras = [
+  "Tesla is accelerating",
+  "the world's transition",
+  "to sustainable energy",
+  "with electric cars",
+];
+
+const frase = palabras.reduce((palabra, texto) => `${palabra} ${texto}`);
+console.log(frase);
+
+const consolidado = universidad.reduce((prev, act) => {
+  return {
+    graduados: prev.graduados + act.graduados,
+    desertaron: prev.desertaron + act.desertaron,
+  };
+});
+
+console.log(consolidado);
